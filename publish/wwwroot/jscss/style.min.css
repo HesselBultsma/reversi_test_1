@@ -1,0 +1,351 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/************** Block styling **************/
+/*
+
+Css reset to make styling easier for multiple brosers
+/**
+ * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+ * Richard Clark (http://richclarkdesign.com)
+ * http://cssreset.com
+ */
+figure {
+  margin: 1rem auto 1rem auto; }
+
+/*https://codepen.io/iraycd/pen/dHrxv*/
+button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 0;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  padding: 1em 1em;
+  color: #FFFFFF;
+  background-color: #9555AF;
+  margin: 0.5em 0.5em; }
+
+button:active {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+  transition-delay: 0s; }
+
+p {
+  display: inline;
+  color: #535866;
+  font-size: 22px; }
+
+html {
+  background-color: darkgoldenrod; }
+
+/************** element styling ************/
+.flexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-flow: row wrap; }
+
+.alert {
+  width: 80%;
+  height: 150px;
+  border-radius: 5px; }
+
+.icon {
+  font-size: 40px;
+  margin: 10px 10px 10px 10px;
+  padding-left: 20px; }
+
+.text-container {
+  width: 100%; }
+
+.text-field {
+  padding: 20px; }
+
+.spel, .rulerColumn, .rulerRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.rulerRow {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: auto;
+  margin-right: auto; }
+
+.vak, .rulerVak {
+  flex-basis: 10%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 1px solid #535866;
+  width: 150px;
+  height: 150px;
+  display: grid; }
+
+.vak > p, .rulerVak > p {
+  margin: auto; }
+
+.piece {
+  border-radius: 50%;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 100%; }
+
+/************** Modifier styling ***********/
+.alert--success {
+  background-color: lightgreen; }
+
+.alert--danger {
+  background-color: indianred; }
+
+.button--success {
+  background-color: darkgreen; }
+
+.button--danger {
+  background-color: red; }
+
+.button--info {
+  background-color: blue; }
+
+.button--transparent {
+  background-color: transparent;
+  border: 0;
+  box-shadow: 0 0 0 0; }
+
+.right--align {
+  justify-content: flex-end;
+  width: 100%; }
+
+.fade-in {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s; }
+
+.fade-out {
+  animation: fadeOut ease 5s;
+  -webkit-animation: fadeOut ease 5s;
+  -moz-animation: fadeOut ease 5s;
+  -o-animation: fadeOut ease 5s; }
+
+.hidden {
+  display: none; }
+
+.white-piece {
+  background: radial-gradient(black 3px, transparent 4px), radial-gradient(black 3px, transparent 4px), linear-gradient(#fff 4px, transparent 0), linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px), linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px), #fff;
+  background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px; }
+
+.black-piece {
+  background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px, linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px, linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px, linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #1b1b1b 10px, transparent 10px), linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px; }
+
+.attention {
+  -webkit-animation: vibrate-1 0.3s linear infinite both;
+  animation: vibrate-1 0.3s linear infinite both; }
+
+.rulerVak {
+  background-color: antiquewhite; }
+
+.vak {
+  background-color: #228B22; }
+
+#buttonContainer {
+  bottom: 0; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-3-10 13:53:10
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation vibrate-1
+ * ----------------------------------------
+ */
+@-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0); }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px); }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px); }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px); }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px); }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0); } }
+
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0); }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px); }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px); }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px); }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px); }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0); } }
+
+@media screen and (max-width: 710px) {
+  .icon {
+    display: none; }
+  #buttonContainer {
+    display: inline-block; } }
+
+@media screen and (max-width: 280px) {
+  .text-field {
+    padding: 0; }
+  p {
+    font-size: 1em; } }
