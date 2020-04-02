@@ -22,14 +22,6 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
-    },
-    "Api": {
-      "commandName": "Api",
-      "launchBrowser": true,
-      "launchUrl": "api/Spel/5PENqUloy0C8xSFe2PvEzg==",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
     }
   }
 }
